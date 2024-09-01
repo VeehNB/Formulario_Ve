@@ -1,22 +1,89 @@
 * {
-    border: 0%;
-    padding: 0%;
-    margin: 0%;
+    border: 0;
+    padding: 0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: white;
 }
 
-div#formulari {
+#formulario {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 33%;
-    height: auto;
+    width: 30%; 
     text-align: center;
     background-color: #8B4512;
+    padding: 15px 30px; 
+    border-radius: 15px;
+    text-shadow: 1px 2px 3px black;
+    box-shadow: 2px 2px 5px black;
 }
 
-div#cadastro {
-    text-align: center;
+#cadastro {
+    padding-top: 10px;
+    text-align: end;
+    margin-left: 60px;
+}
+
+h5 {
+    padding-bottom: 10px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+
+.form {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px; 
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+option, select.assunto {
+    color: black;
+}
+
+.form input {
+    height: 24px;
+    width: 65%; 
+    border-radius: 5px;
+    background-color: #F3D9B5;
+    color: black;
+    box-shadow: 2px 2px 2px black;
+}
+
+select {
+    width: 60%; 
+    height: 24px;
+    border-radius: 5px;
+    background-color: #F3D9B5;
+    color: black;
+    box-shadow: 2px 2px 2px black;
+}
+
+textarea {
+    background-color: #F3D9B5;
+    color: black;
+    resize: none;
+    height: 100px; 
+    width: 275px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin-right: 50px;
+}
+
+.button-container {
+    text-align: center; 
+    margin-right: 180px;
+}
+.button {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: black;
+    padding: 7px;
+    border-radius: 3px;
 }

@@ -7,20 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="formulari">
+    <div id="formulario">
         <h2>Formulário de Contato</h2>
         <h5>Preencha todos os campos</h5>
         <div id="cadastro">
             <form autocomplete="off">
-                <p><label for="inome">Nome:
-                 <input type="text" name="nome" id="inome"></p></label> <br> <br>
-                <p><label for="iemail">Email:
-                <input type="text" name="email" id="iemail"></p></label> <br>
-                <p><label for="iassunto">Assunto:
-                <input type="text" name="assunto" id="iassunto"></p></label> <br>
-                <p><label for="imensagem">Mensagem:
-                <input type="text" name="mensagem" id="imensagem"></p></label> <br>
-                <input type="submit" value="Enviar">
+                <div class="form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                </div>
+
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail válido">
+                </div>
+
+                <div class="form">
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto" class="assunto">
+                        <option value=""></option>
+                        <option value="Duvidas do produto">Dúvidas do produto</option>
+                        <option value="Atraso na entrega">Atraso na entrega</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" class="mensagem"></textarea>
+                </div>
+
+                <div class="button-container">
+                    <input type="button" value="Enviar" class="button">
+                </div>
             </form>
         </div>
     </div>
